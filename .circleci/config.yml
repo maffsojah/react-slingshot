@@ -30,7 +30,8 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: "npm-packages"
+          keys:
+            - "npm-packages"
       - run: npm audit
 
 workflows:
